@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------------------
+# Keil MDK build outputs (one output directory per target)
+# ---------------------------------------------------------------------------
+**/MDK-ARM/qibeng_software/
+**/MDK-ARM/qibeng_software_TestM/
+**/MDK-ARM/qibeng_software_TestRed/
+**/MDK-ARM/qibeng_software_TestWS/
+
+# Generic build artifacts (covers renamed/copied targets)
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.map
+*.lnp
+*.sct
+*.dep
+*.iex
+*.lst
+*.build_log.htm
+*.map.htm
+
+# ---------------------------------------------------------------------------
+# Keil per-user / debugger files (machine-specific, must not be published)
+# ---------------------------------------------------------------------------
+*.uvguix.*
+*.uvoptx
+*.bak
+JLinkLog.txt
+JLinkSettings.ini
+codex_rebuild.log
+
+# ---------------------------------------------------------------------------
+# IDE / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+*.suo
+*.user
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Local scratch / secrets
+# ---------------------------------------------------------------------------
+.env
+*.local
+
+# ---------------------------------------------------------------------------
+# Unused CMSIS components (not referenced by the Keil project)
+# ---------------------------------------------------------------------------
+Drivers/CMSIS/DSP/
+Drivers/CMSIS/NN/
+Drivers/CMSIS/RTOS/
+Drivers/CMSIS/RTOS2/
+Drivers/CMSIS/docs/
